@@ -4,6 +4,7 @@ import android.app.ListActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.SimpleAdapter;
@@ -47,6 +48,7 @@ public class Board10sActivity extends AppCompatActivity {
 
         // Capture the layout's TextView and set the string as its text
         textView = findViewById(R.id.textView);
+        textView.setMovementMethod(new ScrollingMovementMethod());
 
         getNews();
     }
